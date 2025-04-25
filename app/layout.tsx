@@ -30,7 +30,11 @@ export default function RootLayout({
 			lang="en"
 			className={`${baskerville.variable} ${outfit.variable}`}
 		>
-			<body className={`${outfit.className} antialiased`}>{children}</body>
+			<body className={`${outfit.className} antialiased`}>
+				<main className="container flex min-h-screen w-full flex-col">
+					{children}
+				</main>
+			</body>
 		</html>
 	);
 }
