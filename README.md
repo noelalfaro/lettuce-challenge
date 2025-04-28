@@ -16,20 +16,22 @@ You can view a live demo of the completed project here:
 - **TypeScript:** Typed superset of JavaScript that compiles to plain JavaScript.
 - **Tailwind CSS v4:** Utility-first CSS framework for styling.
 - **shadcn/ui:** UI component library built on Tailwind CSS (used for the Sheet component).
-- **react-icons** Icon component library for hamburger menu icon to trigger sheet.
+- **react-icons:** Icon component library for hamburger menu icon to trigger sheet.
+- **tanstack/react-form:** A headless form library for React with built-in validation and state management.
 
 **Features Implemented:**
 
-- Responsive recreation of the Mon Ami Gabi website section based on the provided mockup.🚧
-- Implementation of a functional reservation form (logs data to console).🚧
+- Responsive recreation of the Mon Ami Gabi website section based on the provided mockup.✅
+- Implementation of a functional reservation form (logs data to console). ✅
 - Dynamic "Upcoming Events" section: 🚧
   - Fetches data from the provided JSON endpoint.
   - Filters out past events.
   - Displays events without dates at the bottom.
   - Includes city filtering functionality.
-- Responsive navigation handling for desktop and mobile using Tailwind and shadcn/ui Sheet. 🚧
-- Focus on clean code, clear naming conventions, and semantic HTML. 🚧
-- Effort to meet ADA/WCAG accessibility standards (audited with Lighthouse). 🚧
+- Responsive navigation handling for desktop and mobile using Tailwind and shadcn/ui Sheet. ✅
+- Focus on clean code, clear naming conventions, and semantic HTML. ✅
+- Effort to meet ADA/WCAG accessibility standards (audited with Lighthouse). ✅
+  ![Screenshot of the website](public/lighthouse-score.png)
 
 **How to Install and Run Locally:**
 
