@@ -5,7 +5,7 @@ import mag_mushroom from "@/public/Assets/MAG-MushroomPasta-1578.jpg";
 
 export function About() {
 	return (
-		<div className="flex w-full flex-col md:flex-row">
+		<div className="mb-10 flex h-fit w-full flex-col items-start justify-center p-[2rem] md:flex-row">
 			<div className="flex flex-wrap items-center justify-between gap-2 md:hidden">
 				<Image
 					src={farmers_market}
@@ -29,11 +29,12 @@ export function About() {
 					alt="mag.jpg"
 				/>
 			</div>
-			<div className="hidden w-1/2 flex-wrap justify-end gap-6 md:flex md:h-fit">
+			<div className="hidden w-1/2 flex-wrap items-end justify-end gap-6 self-start md:flex lg:self-center ">
 				<Image
 					src={farmers_market}
 					width={0}
 					height={0}
+					priority
 					style={{ width: "60%", height: "auto", objectFit: "contain" }}
 					alt="farmers_market.jpg"
 				/>
@@ -41,6 +42,7 @@ export function About() {
 					src={mag_mushroom}
 					width={0}
 					height={0}
+					priority
 					style={{ width: "30%", height: "auto", objectFit: "contain" }}
 					alt="mag_mushroom.jpg"
 				/>
@@ -48,11 +50,12 @@ export function About() {
 					src={mag}
 					width={0}
 					height={0}
+					priority
 					style={{ width: "80%", height: "auto", objectFit: "contain" }}
 					alt="mag.jpg"
 				/>
 			</div>
-			<div className="flex w-full flex-col md:w-1/2 md:justify-center md:p-8">
+			<div className="xl:p-15 flex w-full flex-col  md:w-1/2 md:justify-center md:p-10 lg:max-w-[480px] lg:p-12 2xl:self-center">
 				<h3 className="font-heading my-3 text-2xl md:my-2">About</h3>
 				<div>
 					<p className="inline font-light">
@@ -76,8 +79,9 @@ export function About() {
 						{" "}
 						handpicked by renowned chef and owner Gabino Sotelino, are served by
 						the glass or bottle from our signature rolling wine cart. <br />{" "}
-						<br /> While the favorites are here in abundance, there's always
-						something new when you're ready to fall in love all over again.
+						<br /> While the favorites are here in abundance, there&apos;s
+						always something new when you&apos;re ready to fall in love all over
+						again.
 					</p>
 				</div>
 			</div>
