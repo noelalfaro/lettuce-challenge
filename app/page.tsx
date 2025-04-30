@@ -1,16 +1,19 @@
-import { Header } from "@/components/ui/header";
-import { About } from "@/components/ui/about";
-import { Reservation } from "@/components/ui/reservations";
-import { Location } from "@/components/ui/location";
-import { Footer } from "@/components/ui/footer";
+import { Header } from "@/components/header";
+import { About } from "@/components/about";
+import { Reservation } from "@/components/reservations";
+import { Location } from "@/components/location";
+import { Footer } from "@/components/footer";
+import { Upcoming } from "@/components/upcoming";
+
 export default function Home() {
-	return (
-		<>
-			<Header />
-			<About />
-			<Reservation />
-			<Location />
-			<Footer />
-		</>
-	);
+  return (
+    <>
+      <Header />
+      <About />
+      <Reservation />
+      <Upcoming />
+      <Location />
+      <Footer />
+    </>
+  );
 }

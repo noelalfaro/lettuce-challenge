@@ -7,7 +7,6 @@ The goal of this project was to recreate a section of the Mon Ami Gabi website m
 **Live Demo:**
 
 You can view a live demo of the completed project here:
-🚧🚧🚧
 
 **Technologies Used:**
 
@@ -18,16 +17,19 @@ You can view a live demo of the completed project here:
 - **shadcn/ui:** UI component library built on Tailwind CSS (used for the Sheet component).
 - **react-icons:** Icon component library for hamburger menu icon to trigger sheet.
 - **tanstack/react-form:** A headless form library for React with built-in validation and state management.
+- **tanstack/react-query:** A data-fetching library for React that simplifies fetching, caching, and updating asynchronous data.
+- **prettier-plugin-tailwindcss:** Prettier plugin to automatically sort Tailwind CSS classes.
+- **date-fns:** Library for date manipulation and formatting.
 
 **Features Implemented:**
 
 - Responsive recreation of the Mon Ami Gabi website section based on the provided mockup.✅
 - Implementation of a functional reservation form (logs data to console). ✅
-- Dynamic "Upcoming Events" section: 🚧
-  - Fetches data from the provided JSON endpoint.
-  - Filters out past events.
-  - Displays events without dates at the bottom.
-  - Includes city filtering functionality.
+- Dynamic "Upcoming Events" section: ✅
+  - Fetches data from the provided JSON endpoint.✅
+  - Filters out past events.✅
+  - Displays events without dates at the bottom.✅
+  - Includes city filtering functionality.✅
 - Responsive navigation handling for desktop and mobile using Tailwind and shadcn/ui Sheet. ✅
 - Focus on clean code, clear naming conventions, and semantic HTML. ✅
 - Effort to meet ADA/WCAG accessibility standards (audited with Lighthouse). ✅
@@ -55,18 +57,16 @@ To get a copy of the project up and running on your local machine for review, fo
 
 4.  **Open in Browser:** Open your web browser and navigate to `http://localhost:3000` (or the address shown in your terminal).
 
-**Automated Accessibility Check:**
-
-This project aims for WCAG AA compliance
-
-- **Google Lighthouse:**
-
 ---
 
 **Notes on Implementation & Design Choices:**
 
 - For the mobile navigation, I opted to use the shadcn/ui Sheet component to provide a smooth slide-in experience while leveraging its built-in accessibility features.
 - I focused on using Tailwind's utility-first approach to style the components, configuring the LEYE color palette and fonts in the theme.
+- The reservation form is implemented using TanStack Form, which provides a headless approach to form management, allowing for complete control over the UI while handling form state, validation, and submission.
+- The "Upcoming Events" section uses TanStack Query to efficiently fetch, cache, and update event data from the API. This simplifies data management and improves performance.
+- Radix UI components were used for creating accessible and unstyled UI elements, such as the Popover for the date picker and the Dialog for event details.
+- The `prettier-plugin-tailwindcss` plugin is used to automatically sort Tailwind CSS classes, ensuring consistent styling and readability.
 
 ---
 
