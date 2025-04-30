@@ -99,7 +99,10 @@ export function Reservation() {
                       value={field.state.value}
                       onBlur={field.handleBlur}
                       onChange={(e) => field.handleChange(e.target.value)}
-                      className="bg-background font-body w-full border p-2 text-center text-lg font-normal"
+                      className={cn(
+                        "appearance-none",
+                        "bg-background font-body w-full border p-2 text-center text-lg font-normal"
+                      )}
                     >
                       <option value="" disabled>
                         Number of Guests
@@ -178,7 +181,10 @@ export function Reservation() {
                       value={field.state.value}
                       onBlur={field.handleBlur}
                       onChange={(e) => field.handleChange(e.target.value)}
-                      className="bg-background font-body w-full border p-2 text-center text-lg font-normal"
+                      className={cn(
+                        "appearance-none",
+                        "bg-background font-body w-full border p-2 text-center text-lg font-normal"
+                      )}
                     >
                       <option value="" disabled>
                         Time

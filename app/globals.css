@@ -84,4 +84,12 @@
   a:hover {
     text-decoration: underline;
   }
+
+  select {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+  }
 }
