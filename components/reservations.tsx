@@ -12,6 +12,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import { useState } from "react";
 
 export function Reservation() {
   interface Reservation {
@@ -25,6 +26,7 @@ export function Reservation() {
     date: undefined,
     time: "",
   };
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
 
   const partySizeOptions = Array.from({ length: 10 }, (_, i) => i + 1);
   const timeOptions = [
@@ -123,7 +125,10 @@ export function Reservation() {
                 name="date"
                 children={(field) => (
                   <>
-                    <Popover>
+                    <Popover
+                      open={isCalendarOpen}
+                      onOpenChange={setIsCalendarOpen}
+                    >
                       <PopoverTrigger asChild>
                         <Button
                           variant={"outline"}
@@ -145,8 +150,8 @@ export function Reservation() {
                           selected={field.state.value}
                           onSelect={(date: Date | undefined) => {
                             field.handleChange(date);
+                            setIsCalendarOpen(false);
                           }}
-                          initialFocus
                           disabled={(date) => date < today}
                         />
                       </PopoverContent>

@@ -6,7 +6,7 @@ The goal of this project was to recreate a section of the Mon Ami Gabi website m
 
 **Live Demo:**
 
-You can view a live demo of the completed project here:
+You can view a live demo of the completed project here: https://lettuce-challenge-hretgxv4t-noel-alfaros-projects.vercel.app/
 
 **Technologies Used:**
 
